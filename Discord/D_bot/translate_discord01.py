@@ -22,7 +22,8 @@ async def on_message(message):
                 webRequest = requests.get(url_trans, params = trans_option)
                 rus_text = webRequest.text
                 rus_text = rus_text[36:(len(rus_text)-3)]
-                print(eng_text," → ", rus_text, "\n", message.author.name)
+                uni = str((eng_text," --- ", rus_text, "\n", message.author.name), encoding='utf-8')
+                print(uni)
                 rus_text = message.author.name + "\n" + rus_text + "\npre-alfa version"
                 await client.send_message(message.channel, rus_text)
             else:
@@ -31,7 +32,8 @@ async def on_message(message):
                 webRequest = requests.get(url_trans, params = trans_option)
                 rus_text = webRequest.text
                 rus_text = rus_text[36:(len(rus_text)-3)]
-                print(eng_text," → ", rus_text, "\n", message.author.name)
+                uni = str((eng_text," --- ", rus_text, "\n", message.author.name), encoding='utf-8')
+                print(uni)
                 rus_text = message.author.name + "\n" + rus_text + "\npre-alfa version"
                 await client.send_message(message.channel, rus_text)
 client.run(token_discord)
