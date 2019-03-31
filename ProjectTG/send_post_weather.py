@@ -1,5 +1,5 @@
 import telebot
-tgtoken = "579444269:AAEXK0dRTtXtc5vzh7R-GC5NviwleW0v9c0"
+tgtoken = ""
 bot = telebot.TeleBot(tgtoken)
 db = open("DataBaseId.txt", "r")
 list_id = db.read()
