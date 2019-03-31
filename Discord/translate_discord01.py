@@ -2,8 +2,8 @@ import discord
 import requests
 from langdetect import *
 DetectorFactory.seed = 0
-token = "trnsl.1.1.20181225T164207Z.d387221d99499e03.6560c4f87dcde022b22f89b71e36db58d709bac8"
-token_discord ='NTUwNjk3OTk4NTU2ODU2MzMw.D1pwrg.GVnAGTwneWfj_guSjJkvsuR3Xxs'
+token = ""
+token_discord =''
 client = discord.Client()
 @client.event
 async def on_ready():
